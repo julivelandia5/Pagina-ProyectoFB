@@ -1,0 +1,17 @@
+ECHO est  activado.
+# Ignorar archivos y carpetas del sistema
+.gitconfig
+.vscode/
+AppData/
+Desktop/
+Documents/
+Pictures/
+Videos/
+*.pdf
+*.exe
+
+# Ignorar archivos temporales y cachés
+*.log
+.DS_Store
+Thumbs.db
+
