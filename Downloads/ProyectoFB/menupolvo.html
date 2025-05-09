@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Femme Beauty</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Font Elegant -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Cargar fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Cargar fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Asegúrate de incluir FontAwesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Banner Rotativo Superior -->
+    <div id="top-banner" style="
+        background-color: #ffc1c1;
+        color: #000000;
+        text-align: center;
+        padding: 5px;
+        font-weight: 500;
+        font-family: 'Arima', serif;
+        font-size: 16px;
+    ">
+        <span id="banner-message">¡Envío gratis por compras superiores a $50.000!</span>
+    </div>
+
+    <script>
+    // Mensajes que rotarán
+    const messages = [
+        "¡Envío gratis por compras superiores a $50.000!",
+        "Tu pedido llegará en 1 a 3 días hábiles.",
+        "¡Atención personalizada por WhatsApp todos los días!"
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % messages.length;
+        document.getElementById("banner-message").textContent = messages[index];
+    }, 5000);
+    </script>
+
+
+<!-- Navbar Start -->
+<div class="container-fluid border-top px-xl-5" style="height: 130px;">
+  <div class="row align-items-center">
+
+      <!-- Logo -->
+      <div class="col-lg-2 d-flex align-items-center">
+          <a href="index.html" class="text-decoration-none">
+              <img src="img/logo.jpg" alt="Femme Beauty" style="height: 90px; margin-top: 20px;">
+          </a>
+      </div>
+
+      <!-- Menú -->
+      <div class="col-lg-10">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="height: 90px;">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                  <ul class="navbar-nav custom-menu" style="white-space: nowrap;">
+                      <li class="nav-item posicion-relative">
+                          <a href="#" class="nav-link" id="btn-facial">Cuidado Facial <i class="fa fa-chevron-down ml-1"></i></a>
+                          <div class="submenu" id="submenu-facial">
+                              <a href="menuserum.html">Serum</a>
+                              <a href="menucrema.html">Cremas</a>
+                              <a href="menulimpieza.html">Limpieza</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item posicion-relative">
+                          <a href="#" class="nav-link" id="btn-capilar">Cuidado Capilar <i class="fa fa-chevron-down ml-1"></i></a>
+                          <div class="submenu" id="submenu-capilar">
+                              <a href="menushampoo.html">Shampoo</a>
+                              <a href="menuacondicionador.html">Acondicionador</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item posicion-relative">
+                          <a href="#" class="nav-link" id="btn-maquillaje">Maquillaje <i class="fa fa-chevron-down ml-1"></i></a>
+                          <div class="submenu" id="submenu-maquillaje">
+                              <a href="menubase.html">Bases</a>
+                              <a href="menupolvo.html">Polvos y Rubor</a>
+                              <a href="menulabial.html">Labiales</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item posicion-relative">
+                          <a href="#" class="nav-link" id="btn-herramientas">Herramientas <i class="fa fa-chevron-down ml-1"></i></a>
+                          <div class="submenu" id="submenu-herramientas">
+                              <a href="menuplancha.html">Planchas</a>
+                              <a href="menusecador.html">Secadores</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item posicion-relative">
+                          <a href="#" class="nav-link" id="btn-tratamientos">Tratamientos <i class="fa fa-chevron-down ml-1"></i></a>
+                          <div class="submenu" id="submenu-tratamientos">
+                              <a href="menupiel.html">Piel</a>
+                              <a href="menucapilar.html">Capilar</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+
+  </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/3184841892?text=Hola,%20estoy%20interesado/a%20en%20obtener%20más%20información%20sobre%20los%20productos.%20¿Puedes%20ayudarme?" target="_blank" class="whatsapp-button">
+
+  <img src="img/whatsapp.jpg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+<!-- Botón WhatsApp End -->
+
+<!-- Products Start -->
+   <div class="container-fluid pt-1">
+    <div class="text-center mb-4">
+        <h2 class="titulo-romantico">Polvo y Rubor</h2>        
+    </div>
+
+    <div style="text-align: left; margin-left: 20px; margin-bottom: 30px;">
+        <a href="index.html" style="font-size: 15px; text-decoration: none; color: #000000;">
+          ⬅ Volver al inicio
+        </a>
+      </div>
+      
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-1.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Compacto</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Aclarante y Humectante</span>
+                        </p>
+                                                
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-2.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo compacto kaloe</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">N°2 beige</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-3.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Compacto Masglo</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Perfect Finish Mediano 2</span>
+                        </p>                          
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-4.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Compacto</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">SPF 25</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-5.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Compacto Kaloe</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Imperfecciones Spf 20</span>
+                        </p>
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-6.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Facial</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Suelto</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/polvo-7.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Polvo Facial </span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Suelto Traslúcido</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/rubor-1.png" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Rubor Compacto</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">con Aloe Vera</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1 extra-product">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/rubor-2.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Rubor Compacto con</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Aloe Vera y Vitamina E</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1 extra-product">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/rubor-3.png" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Rubor Compacto</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">con Aloe Vera</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1 extra-product">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/rubor-4.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Rubor Compacto con</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">Aloe Vera y Vitamina E</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1 extra-product">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img src="img/rubor-5.jpg" alt="Producto" style="width: 100%; height: 300px; object-fit: cover;">
+                </div>
+                <div class="card-body border-left border-right border-bottom text-center p-2 d-flex flex-column justify-content-center" style="line-height: 1.2; height: 120px;">
+                  <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: black;">
+                        <span style="font-size: 16px; display: block;">Rubor Duo</span>
+                        <p style="margin: 2px 0 0;">
+                          <span style="font-size: 16px; display: block;">N° 2</span>
+                        </p>
+                        
+                        <p><span style="font-size: 16px;">$ 00.000</span>
+                        <span class="text-muted" style="margin-left: 6px; font-size: 16px;"><del>$ 00.000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Logo a la izquierda -->
+      <div class="footer-logo">
+        <img src="img/logo1.png" alt="Logo" />
+      </div>
+  
+                <!-- Información del sitio al centro, desplazado un poco a la derecha -->
+        <div class="footer-info" style="max-width: 300px; margin-left: 220px; text-align: center;">
+            <p><strong>Información del Sitio</strong></p>
+            <p>Tienda online de productos de calidad y excelente atención.</p>
+            <p>¿Dudas? Escríbenos por <a target="_blank">WhatsApp</a> y te damos toda la info.</p>
+        </div>
+    
+        <!-- Horario y ubicación más hacia la derecha -->
+        <div class="footer-contact" style="margin-left: 40px;">
+            <p><strong>Horario de Atención:</strong><br> Lunes a Viernes - 9:00 AM a 6:00 PM</p>
+            <p><strong>Ubicación:</strong><br> Calle Ficticia 123, Ciudad, País</p>
+        </div>
+            </div>
+  </footer>
+
+  <!-- JavaScript para mostrar/ocultar submenús -->
+<script>
+const menus = [
+  { btn: 'btn-facial', submenu: 'submenu-facial' },
+  { btn: 'btn-capilar', submenu: 'submenu-capilar' },
+  { btn: 'btn-maquillaje', submenu: 'submenu-maquillaje' },
+  { btn: 'btn-herramientas', submenu: 'submenu-herramientas' },
+  { btn: 'btn-tratamientos', submenu: 'submenu-tratamientos' }
+];
+
+menus.forEach(menu => {
+  const button = document.getElementById(menu.btn);
+  const submenu = document.getElementById(menu.submenu);
+
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    const isVisible = submenu.style.display === 'block';
+
+    // Ocultar todos
+    menus.forEach(m => {
+      const s = document.getElementById(m.submenu);
+      if (s !== submenu) s.style.display = 'none';
+    });
+
+    // Mostrar el seleccionado
+    submenu.style.display = isVisible ? 'none' : 'block';
+  });
+
+  // Cierra si haces clic fuera
+  document.addEventListener('click', function (e) {
+    if (!submenu.contains(e.target) && !button.contains(e.target)) {
+      submenu.style.display = 'none';
+    }
+  });
+});
+</script>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtener todos los productos (usando la clase específica de la columna)
+  const productContainers = document.querySelectorAll(".col-lg-3.col-md-6.col-sm-12.pb-1");
+  const totalProducts = productContainers.length;
+  
+  // Número inicial de productos a mostrar
+  const initialVisible = 8;
+  const batchSize = 4;
+  
+  // Función para mostrar/ocultar productos
+  function updateProductDisplay() {
+    productContainers.forEach((container, index) => {
+      if (index < currentlyVisible) {
+        container.style.display = "block";
+      } else {
+        container.style.display = "none";
+      }
+    });
+  }
+  
+  // Inicializar contador de productos visibles
+  let currentlyVisible = Math.min(initialVisible, totalProducts);
+  
+  // Configuración inicial - mostrar solo los primeros 8 (o menos si no hay tantos)
+  updateProductDisplay();
+  
+  // Crear botón solo si hay más productos para mostrar
+  if (totalProducts > initialVisible) {
+    // Crear botón
+    const showMoreBtn = document.createElement("button");
+    showMoreBtn.textContent = "Ver más productos";
+    showMoreBtn.className = "btn btn-primary d-block mx-auto mt-4";
+    showMoreBtn.id = "showMoreProductsBtn"; // Asignar un ID único
+    
+    // Añadir botón al DOM después del contenedor de productos
+    const productContainer = document.querySelector(".row.px-xl-5.pb-3");
+    productContainer.insertAdjacentElement("afterend", showMoreBtn);
+    
+    // Añadir evento al botón
+    showMoreBtn.addEventListener("click", function() {
+      // Mostrar el siguiente lote de productos
+      currentlyVisible = Math.min(currentlyVisible + batchSize, totalProducts);
+      updateProductDisplay();
+      
+      // Si ya mostramos todos los productos, ELIMINAR el botón del DOM
+      if (currentlyVisible >= totalProducts) {
+        showMoreBtn.remove(); // Elimina físicamente el botón del DOM
+      }
+    });
+  }
+});
+  </script>
+
+</body>
+
+
+
+</html>
